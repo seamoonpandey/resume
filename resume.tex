@@ -6,7 +6,10 @@
 \usepackage{parskip}
 \usepackage{xcolor}
 \usepackage[T1]{fontenc}
-\usepackage{lato}
+% See cv.tex for why this is helvet and not lato (MiKTeX ships lato.sty without its
+% font files, silently falling back to Computer Modern bitmaps).
+\usepackage[scaled=0.92]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
 
 \setlength{\parskip}{1pt plus 1pt minus 1pt}
 
@@ -18,7 +21,7 @@
  linkcolor=linkblue
 }
 
-\titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\vspace{1pt}\color{rulegray}\hrule height 0.6pt]
+\titleformat{\section}{\large\bfseries}{}{0em}{\MakeUppercase}[\vspace{1pt}\color{rulegray}\hrule height 0.6pt]
 \titlespacing*{\section}{0pt}{4pt}{2pt}
 
 \pagestyle{empty}
@@ -84,6 +87,11 @@ AI \& Backend Engineer who builds production-grade systems end to end, from fine
 
 \section*{Experience}
 
+\project{Full-Stack Engineer --- Lamida Inc.}{Full-time \textbar\ 23 Feb 2026 -- Present}
+\begin{itemize}
+\item \textcolor{red}{[REPLACE --- one line: what you build at Lamida, the stack, and one concrete outcome.]}
+\end{itemize}
+
 \project{Freelance Full-Stack Developer}{Contract, Remote}
 \begin{itemize}
 \item Delivered production full-stack platforms on an \textbf{Express.js + React} stack, handling authentication, REST APIs, and third-party integrations:
@@ -101,6 +109,7 @@ AI \& Backend Engineer who builds production-grade systems end to end, from fine
 \section*{Education}
 
 \textbf{Institute of Engineering, Tribhuvan University} \hfill 2022 to 2026\\
-Bachelor's in Computer Engineering, Pashchimanchal Campus, Pokhara \hfill
+Bachelor of Engineering in Computer Engineering, Pashchimanchal Campus, Pokhara\\
+Aggregate: \textbf{67.98\%} --- First Division \ \textbar\ \ English: \textbf{IELTS Academic 7.5} (CEFR C1), no band below 7.0
 
 \end{document}

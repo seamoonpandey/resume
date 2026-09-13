@@ -1,0 +1,131 @@
+% ---------------------------------------------------------------------------
+% Seamoon Pandey — Academic CV (for Master's admissions, Germany / EU)
+% Build: pdflatex -interaction=nonstopmode cv.tex
+% ---------------------------------------------------------------------------
+\documentclass[a4paper,10pt]{article}
+\usepackage[a4paper,margin=0.5in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage{xcolor}
+\usepackage[T1]{fontenc}
+% Sans text face. Nimbus Sans (helvet) ships with every TeX distribution and embeds
+% as vector Type 1. The `lato` package is deliberately NOT used: MiKTeX installs
+% lato.sty without its font files, which silently falls back to Computer Modern
+% BITMAPS (Type 3) — blurry on screen, and poor text extraction for the automated
+% systems that parse application PDFs. To use Lato on Overleaf, swap the two lines
+% below for: \usepackage{lato}
+\usepackage[scaled=0.92]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+\setlength{\parskip}{1pt plus 1pt minus 1pt}
+
+\definecolor{linkblue}{RGB}{0,102,204}
+\definecolor{rulegray}{RGB}{120,120,120}
+\hypersetup{
+  colorlinks=true,
+  urlcolor=linkblue,
+  linkcolor=linkblue,
+  pdftitle={Seamoon Pandey — Curriculum Vitae},
+  pdfauthor={Seamoon Pandey}
+}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{\MakeUppercase}[\vspace{1pt}\color{rulegray}\hrule height 0.6pt]
+\titlespacing*{\section}{0pt}{4pt}{1pt}
+
+\pagestyle{empty}
+
+\setlist[itemize]{noitemsep, topsep=1pt, parsep=1pt, leftmargin=1.1em}
+
+% \entry{left bold}{right gray}
+\newcommand{\entry}[2]{\textbf{#1}\hfill{\color{rulegray}\small #2}\par\vspace{1pt}}
+\newcommand{\note}[1]{{\small\color{rulegray} #1}\par}
+
+\begin{document}
+
+% ------------------------------ HEADER ------------------------------
+\begin{center}
+{\LARGE \textbf{Seamoon Pandey}}\\[2pt]
+{\color{rulegray}B.E. Computer Engineering \ \textbar\ \ AI \& Backend Engineer}\\[3pt]
+\href{mailto:pandeyseamoon05@gmail.com}{pandeyseamoon05@gmail.com} \ \textbar\ \ +977 9866142928 \ \textbar\
+\href{https://github.com/seamoonpandey}{github.com/seamoonpandey} \ \textbar\
+\href{https://www.linkedin.com/in/seamoonpandey/}{linkedin.com/in/seamoonpandey}\\[2pt]
+{\color{rulegray}\small Pokhara, Nepal \ \textbar\ \ Date of birth: 27 January 2003 \ \textbar\ \ Nationality: Nepali}
+\end{center}
+
+% ------------------------------ PROFILE ------------------------------
+\section*{Profile}
+
+Computer Engineering graduate of the Institute of Engineering, Tribhuvan University, applying for an M.Sc.\ in Computer Science. My final-year thesis paired a fine-tuned DistilBERT classifier with a polyglot microservice backend to detect cross-site scripting vulnerabilities. My interests lie in applied machine learning, honest model evaluation, and the distributed systems that serve models in production.
+
+% ------------------------------ EDUCATION ------------------------------
+\section*{Education}
+
+\entry{Pashchimanchal Campus, Institute of Engineering, Tribhuvan University}{Pokhara, Nepal}
+Bachelor of Engineering in Computer Engineering \hfill {\color{rulegray}\small 2022 -- 2026}\\
+Aggregate: \textbf{67.98\%} --- \textbf{First Division} \ \textbar\ \ 1096.1 / 1612.5 marks \ \textbar\ \ T.U. Regd.\ 3-2-45-173-2021\\
+\note{Tribhuvan University scale: Distinction $\geq$ 80\%, First Division $\geq$ 65\%, Second Division $\geq$ 50\%. Examinations are set and moderated centrally by the university and marks are not scaled.}
+\vspace{2pt}
+\textit{Thesis:} RedSentinel --- AI-Assisted Cross-Site Scripting (XSS) Vulnerability Scanner (Lead Architect, team of 3).
+
+% ------------------------------ LANGUAGES ------------------------------
+\section*{Language Proficiency}
+
+\begin{itemize}
+\item \textbf{English} --- IELTS Academic \textbf{7.5} overall, \textbf{CEFR C1} (15 August 2026). Listening 8.5 \ \textbar\ \ Reading 7.5 \ \textbar\ \ Writing 7.0 \ \textbar\ \ Speaking 7.0. No band below 7.0.
+\item \textbf{Nepali} --- Native speaker. \ \ \textbf{Medium of instruction:} English, throughout the Bachelor's degree.
+\end{itemize}
+
+% ------------------------------ THESIS ------------------------------
+\section*{Thesis Project}
+
+\entry{RedSentinel: AI-Assisted XSS Vulnerability Scanner}{Final-year Thesis, Team of 3 \textbar\ \href{https://github.com/seamoonpandey/Xbow}{Code} \textbar\ \href{https://github.com/seamoonpandey/Xbow-report}{Report} \textbar\ \href{https://drive.google.com/file/d/1HZmdURP3l8JNoTyL40me_O1-8kat4Q9d/view?usp=sharing}{Demo}}
+\textit{Lead architect; owned the NestJS orchestration core and the end-to-end ML pipeline. Teammates built the fuzzer and obfuscation engines.}
+\begin{itemize}
+\item Fine-tuned a \textbf{DistilBERT} multi-task classifier to label an injection point's context and severity, replacing brittle signature matching. Reached near-perfect accuracy on an \textbf{8,869-sample} held-out split --- a result I attribute to a deterministic, well-structured label space rather than to model strength, and report as such.
+\item Built the full ML pipeline on a \textbf{59,122-entry} curated XSS dataset: data curation, custom tokenizer training, multi-task training with checkpointing, evaluation, and an inference API with ONNX/TorchScript export and confidence calibration.
+\item Architected a polyglot microservice system: a \textbf{TypeScript/NestJS} core orchestrating three \textbf{Python/FastAPI} AI services over a \textbf{Redis/BullMQ} job queue, with \textbf{PostgreSQL} persistence and a real-time \textbf{Next.js} dashboard (Socket.IO).
+\item Co-developed an \textbf{XGBoost} payload ranker (35 engineered features) to prioritise payloads by predicted effectiveness, with a heuristic fallback when the trained artifact is unavailable.
+\end{itemize}
+
+% ------------------------------ SKILLS ------------------------------
+\section*{Technical Skills}
+
+\begin{itemize}
+\item \textbf{Languages:} Python, TypeScript, JavaScript, Ruby, C/C++, Dart
+\item \textbf{AI / ML:} PyTorch, Transformers (DistilBERT), XGBoost, YOLOv8, ONNX/TorchScript, feature engineering, model evaluation
+\item \textbf{Backend:} NestJS, FastAPI, Express.js, Flask, Ruby on Rails, REST, WebSocket/Socket.IO
+\item \textbf{Data \& Infra:} PostgreSQL, Redis, BullMQ, Docker, Docker Compose, microservices, async job queues
+\item \textbf{Frontend \& Security:} React, Next.js, Flutter; XSS detection, fuzzing, WAF analysis, headless-browser verification (Playwright)
+\item \textbf{Practices:} system architecture, MVC, auth (JWT/API keys), e2e/unit testing, Git, Linux
+\end{itemize}
+
+% ------------------------------ PROJECTS ------------------------------
+\section*{Selected Projects}
+
+\begin{itemize}
+\item \textbf{AI Artifact Recognition Platform} {\color{rulegray}\small(PEC Hackathon --- \textbf{YOLOv8}, Flask, React)} --- Flask backend and React dashboard for real-time object recognition, with asynchronous inference and structured monitoring endpoints.
+\item \textbf{Community Connect} {\color{rulegray}\small(OSM Hackathon --- Express.js, Flutter)} --- full-stack event-coordination platform with REST APIs for real-time GPS-based attendance validation and event tracking.
+\item \textbf{Garva Diary} {\color{rulegray}\small(BMC InnovateX --- Ruby on Rails)} --- backend APIs on a Rails MVC architecture with structured validation workflows and mobile integration.
+\end{itemize}
+
+% ------------------------------ EXPERIENCE ------------------------------
+\section*{Experience}
+
+\entry{Full-Stack Engineer --- Lamida Inc.}{Full-time \textbar\ 23 Feb 2026 -- Present}
+\begin{itemize}
+\item \textcolor{red}{[REPLACE --- one line: what you build at Lamida, the stack, and one concrete outcome.]}
+\end{itemize}
+
+\entry{Freelance Full-Stack Developer}{Contract, Remote}
+\begin{itemize}
+\item Delivered production platforms on an \textbf{Express.js + React} stack --- authentication, REST APIs, third-party integrations --- while carrying a full course load: \textbf{Jyotisam}, an astrology consultation and booking platform (\href{https://jyotisam.com}{jyotisam.com}), and \textbf{Mahadaan}, a donation and charity platform with secure data handling (\href{https://mahadaan.com}{mahadaan.com}).
+\end{itemize}
+
+\entry{Mentor --- Call for Enthusiasts Programme}{Innovative Computer Engineering Students' Society (i-CES)}
+\begin{itemize}
+\item Mentored junior students on scalable application design, clean backend architecture, and development practice.
+\end{itemize}
+
+\end{document}
