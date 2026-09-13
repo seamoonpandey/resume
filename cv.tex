@@ -57,24 +57,24 @@
 % ------------------------------ PROFILE ------------------------------
 \section*{Profile}
 
-Computer Engineering graduate of the Institute of Engineering, Tribhuvan University, applying for an M.Sc.\ in Computer Science. My final-year thesis paired a fine-tuned DistilBERT classifier with a polyglot microservice backend to detect cross-site scripting vulnerabilities. My interests lie in applied machine learning, honest model evaluation, and the distributed systems that serve models in production.
+Computer Engineering graduate of the Institute of Engineering, Tribhuvan University, applying for an M.Sc.\ in Computer Science. My final-year thesis built a cross-site scripting scanner on a fine-tuned DistilBERT classifier and a microservice backend. I now work full-time as a full-stack engineer at Lamida Inc., building Web3 systems.
 
 % ------------------------------ EDUCATION ------------------------------
 \section*{Education}
 
 \entry{Pashchimanchal Campus, Institute of Engineering, Tribhuvan University}{Pokhara, Nepal}
 Bachelor of Engineering in Computer Engineering \hfill {\color{rulegray}\small 2022 -- 2026}\\
-Aggregate: \textbf{67.98\%} --- \textbf{First Division} \ \textbar\ \ 1096.1 / 1612.5 marks \ \textbar\ \ T.U. Regd.\ 3-2-45-173-2021\\
+Aggregate: \textbf{67.98\%}, \textbf{First Division} \ \textbar\ \ 1096.1 / 1612.5 marks \ \textbar\ \ T.U. Regd.\ 3-2-45-173-2021\\
 \note{Tribhuvan University scale: Distinction $\geq$ 80\%, First Division $\geq$ 65\%, Second Division $\geq$ 50\%. Examinations are set and moderated centrally by the university and marks are not scaled.}
 \vspace{2pt}
-\textit{Thesis:} RedSentinel --- AI-Assisted Cross-Site Scripting (XSS) Vulnerability Scanner (Lead Architect, team of 3).
+\textit{Thesis:} RedSentinel, an AI-assisted cross-site scripting (XSS) vulnerability scanner. Lead architect, team of 3.
 
 % ------------------------------ LANGUAGES ------------------------------
 \section*{Language Proficiency}
 
 \begin{itemize}
-\item \textbf{English} --- IELTS Academic \textbf{7.5} overall, \textbf{CEFR C1} (15 August 2026). Listening 8.5 \ \textbar\ \ Reading 7.5 \ \textbar\ \ Writing 7.0 \ \textbar\ \ Speaking 7.0. No band below 7.0.
-\item \textbf{Nepali} --- Native speaker. \ \ \textbf{Medium of instruction:} English, throughout the Bachelor's degree.
+\item \textbf{English:} IELTS Academic \textbf{7.5} overall, \textbf{CEFR C1} (15 August 2026). Listening 8.5 \ \textbar\ \ Reading 7.5 \ \textbar\ \ Writing 7.0 \ \textbar\ \ Speaking 7.0. No band below 7.0.
+\item \textbf{Nepali:} native speaker. \ \ \textbf{Medium of instruction:} English, throughout the Bachelor's degree.
 \end{itemize}
 
 % ------------------------------ THESIS ------------------------------
@@ -83,7 +83,7 @@ Aggregate: \textbf{67.98\%} --- \textbf{First Division} \ \textbar\ \ 1096.1 / 1
 \entry{RedSentinel: AI-Assisted XSS Vulnerability Scanner}{Final-year Thesis, Team of 3 \textbar\ \href{https://github.com/seamoonpandey/Xbow}{Code} \textbar\ \href{https://github.com/seamoonpandey/Xbow-report}{Report} \textbar\ \href{https://drive.google.com/file/d/1HZmdURP3l8JNoTyL40me_O1-8kat4Q9d/view?usp=sharing}{Demo}}
 \textit{Lead architect; owned the NestJS orchestration core and the end-to-end ML pipeline. Teammates built the fuzzer and obfuscation engines.}
 \begin{itemize}
-\item Fine-tuned a \textbf{DistilBERT} multi-task classifier to label an injection point's context and severity, replacing brittle signature matching. Reached near-perfect accuracy on an \textbf{8,869-sample} held-out split --- a result I attribute to a deterministic, well-structured label space rather than to model strength, and report as such.
+\item Fine-tuned a \textbf{DistilBERT} multi-task classifier to label an injection point's context and severity, replacing brittle signature matching, and reached near-perfect accuracy on an \textbf{8,869-sample} held-out split of a deterministic, well-structured label space.
 \item Built the full ML pipeline on a \textbf{59,122-entry} curated XSS dataset: data curation, custom tokenizer training, multi-task training with checkpointing, evaluation, and an inference API with ONNX/TorchScript export and confidence calibration.
 \item Architected a polyglot microservice system: a \textbf{TypeScript/NestJS} core orchestrating three \textbf{Python/FastAPI} AI services over a \textbf{Redis/BullMQ} job queue, with \textbf{PostgreSQL} persistence and a real-time \textbf{Next.js} dashboard (Socket.IO).
 \item Co-developed an \textbf{XGBoost} payload ranker (35 engineered features) to prioritise payloads by predicted effectiveness, with a heuristic fallback when the trained artifact is unavailable.
@@ -105,26 +105,26 @@ Aggregate: \textbf{67.98\%} --- \textbf{First Division} \ \textbar\ \ 1096.1 / 1
 \section*{Selected Projects}
 
 \begin{itemize}
-\item \textbf{AI Artifact Recognition Platform} {\color{rulegray}\small(PEC Hackathon --- \textbf{YOLOv8}, Flask, React)} --- Flask backend and React dashboard for real-time object recognition, with asynchronous inference and structured monitoring endpoints.
-\item \textbf{Community Connect} {\color{rulegray}\small(OSM Hackathon --- Express.js, Flutter)} --- full-stack event-coordination platform with REST APIs for real-time GPS-based attendance validation and event tracking.
-\item \textbf{Garva Diary} {\color{rulegray}\small(BMC InnovateX --- Ruby on Rails)} --- backend APIs on a Rails MVC architecture with structured validation workflows and mobile integration.
+\item \textbf{AI Artifact Recognition Platform} {\color{rulegray}\small(PEC Hackathon: \textbf{YOLOv8}, Flask, React)}. Flask backend and React dashboard for real-time object recognition, with asynchronous inference and structured monitoring endpoints.
+\item \textbf{Community Connect} {\color{rulegray}\small(OSM Hackathon: Express.js, Flutter)}. Full-stack event-coordination platform with REST APIs for real-time GPS-based attendance validation and event tracking.
+\item \textbf{Garva Diary} {\color{rulegray}\small(BMC InnovateX: Ruby on Rails)}. Backend APIs on a Rails MVC architecture with structured validation workflows and mobile integration.
 \end{itemize}
 
 % ------------------------------ EXPERIENCE ------------------------------
 \section*{Experience}
 
-\entry{Full-Stack Engineer --- Lamida Inc.}{Full-time \textbar\ 23 Feb 2026 -- Present}
+\entry{Full-Stack Engineer, Lamida Inc.}{Full-time \textbar\ 23 Feb 2026 -- Present}
 \begin{itemize}
-\item Build scalable Web3 applications, including a decentralised autonomous organisation (DAO) for the tUSDT token.
-\item \textbf{Team Lead --- Bitfolio}, from September 2026.
+\item Build scalable Web3 applications, including a DAO for the tUSDT token.
+\item \textbf{Team Lead, Bitfolio} from September 2026.
 \end{itemize}
 
 \entry{Freelance Full-Stack Developer}{Contract, Remote}
 \begin{itemize}
-\item Delivered production platforms on an \textbf{Express.js + React} stack --- authentication, REST APIs, third-party integrations --- while carrying a full course load: \textbf{Jyotisam}, an astrology consultation and booking platform (\href{https://jyotisam.com}{jyotisam.com}), and \textbf{Mahadaan}, a donation and charity platform with secure data handling (\href{https://mahadaan.com}{mahadaan.com}).
+\item Delivered production platforms on an \textbf{Express.js + React} stack (authentication, REST APIs, third-party integrations) while carrying a full course load: \textbf{Jyotisam}, an astrology consultation and booking platform (\href{https://jyotisam.com}{jyotisam.com}), and \textbf{Mahadaan}, a donation and charity platform with secure data handling (\href{https://mahadaan.com}{mahadaan.com}).
 \end{itemize}
 
-\entry{Mentor --- Call for Enthusiasts Programme}{Innovative Computer Engineering Students' Society (i-CES)}
+\entry{Mentor, Call for Enthusiasts Programme}{Innovative Computer Engineering Students' Society (i-CES)}
 \begin{itemize}
 \item Mentored junior students on scalable application design, clean backend architecture, and development practice.
 \end{itemize}
