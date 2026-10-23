@@ -15,11 +15,12 @@ Live links: [GitHub](https://github.com/seamoonpandey) · [LinkedIn](https://www
 admissions committee reads first. It states the aggregate (67.98%, First Division)
 alongside the Tribhuvan University grading scale, so a reader outside Nepal can place
 the figure — a mark in the high sixties here is not what the same number means under a
-more generous system. The capstone is framed as a *thesis*, and the leadership and
-freelance work sit below the academic material.
+more generous system. The capstone is framed as a *thesis*. Experience (Lamida Inc.,
+freelance, mentoring) follows it, and the hackathon projects come last.
 
-**`resume.pdf`** leads with the Summary and Flagship Project, because a hiring manager
-reads for capability first. Education sits at the bottom.
+**`resume.pdf`** leads with the Summary and Experience, because a hiring manager
+reads for capability first and the full-time role at Lamida Inc. is now the strongest
+evidence of it. Education sits at the bottom.
 
 Both are single-column for clean parsing by applicant-tracking systems and by the
 automated document handling used in university admissions.
@@ -77,7 +78,7 @@ swap the `helvet` lines for `\usepackage{lato}`.
 
 - Tuned to fit one A4 page each. If content is added, reclaim space via `\parskip`,
   the `\titlespacing` of `\section`, or the `geometry` margin (`0.5in` in `cv.tex`,
-  `0.6in` in `resume.tex`) before cutting content.
+  `0.55in` in `resume.tex`) before cutting content.
 
 ## Files
 

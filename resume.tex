@@ -43,7 +43,26 @@
 
 \section*{Summary}
 
-AI \& Backend Engineer who builds production-grade systems end to end, from fine-tuned transformer models to the distributed services that serve them. Architected an AI-assisted security scanner pairing a DistilBERT classifier with a NestJS microservice backend on a 59k-sample dataset, with strengths across Python ML pipelines, TypeScript/Node backends, and real-time full-stack delivery.
+AI \& Backend Engineer and 2026 Computer Engineering graduate who builds production systems end to end, from fine-tuned transformer models to the data pipelines and services around them. Leads the Bitfolio team at Lamida Inc., building market intelligence for the Bittensor network. Architected an AI-assisted security scanner pairing a DistilBERT classifier with a NestJS microservice backend on a 59k-sample dataset.
+
+\section*{Experience}
+
+\project{Team Lead and Full-Stack Engineer, Lamida Inc.}{Full-time \textbar\ 23 Feb 2026 -- Present}
+\begin{itemize}
+\item \textbf{Team Lead, Bitfolio} from September 2026: market intelligence and paper trading for \textbf{Bittensor} subnets. Its \textbf{Python} collector ingests X, Discord, taostats and on-chain data across 129 subnets into \textbf{SQLite}, deployed as \textbf{systemd} services by CI on every merge to main.
+\item Root-caused a silent production data bug: an upstream API ignored its subnet filter and a duplicate guard kept the first bad response, so whale signals used another subnet's holders for weeks. Moved holder data to \textbf{on-chain metagraph reads}, added rename and coldkey-swap history, purged \textbf{73,250} corrupt rows, and added regression tests.
+\item Build full-stack \textbf{Node.js} applications for \textbf{Web3} products, including a DAO for the \textbf{tUSDT} token.
+\end{itemize}
+
+\project{Freelance Full-Stack Developer}{Contract, Remote}
+\begin{itemize}
+\item Delivered production platforms on \textbf{Express.js + React} (auth, REST APIs, third-party integrations): \textbf{Jyotisam}, an astrology booking platform (\href{https://jyotisam.com}{jyotisam.com}), and \textbf{Mahadaan}, a donation platform (\href{https://mahadaan.com}{mahadaan.com}).
+\end{itemize}
+
+\project{Mentor, Call for Enthusiasts Program (i-CES)}{}
+\begin{itemize}
+\item Mentored students on building scalable applications with clean backend architecture and development practices.
+\end{itemize}
 
 \section*{Technical Skills}
 
@@ -51,7 +70,7 @@ AI \& Backend Engineer who builds production-grade systems end to end, from fine
 \item \textbf{Languages:} Python, TypeScript, JavaScript, Ruby, C/C++, Dart
 \item \textbf{AI / ML:} PyTorch, Transformers (DistilBERT), XGBoost, YOLOv8, ONNX/TorchScript, feature engineering, model evaluation
 \item \textbf{Backend:} Node.js, NestJS, FastAPI, Express.js, Flask, Ruby on Rails, REST, WebSocket/Socket.IO
-\item \textbf{Data \& Infra:} PostgreSQL, Redis, BullMQ, Docker, Docker Compose, microservices, async job queues
+\item \textbf{Data \& Infra:} PostgreSQL, SQLite, Redis, BullMQ, Docker, Docker Compose, GitHub Actions CI/CD, systemd, job queues
 \item \textbf{Frontend:} React, Next.js, Flutter
 \item \textbf{Security:} XSS detection, context-aware payload generation, fuzzing, WAF analysis, headless-browser verification (Playwright)
 \item \textbf{Practices:} system architecture, MVC, auth (JWT/API keys), e2e/unit testing, Git, Linux
@@ -71,46 +90,15 @@ AI \& Backend Engineer who builds production-grade systems end to end, from fine
 
 \section*{Selected Projects}
 
-\project{AI Artifact Recognition Platform}{PEC Hackathon \textbar\ \textbf{YOLOv8}, Flask, React}
 \begin{itemize}
-\item Built a Flask backend and React dashboard for real-time, YOLOv8-based object recognition with asynchronous inference and structured monitoring endpoints.
-\end{itemize}
-
-\project{Community Connect}{OSM Hackathon \textbar\ Express.js, Flutter}
-\begin{itemize}
-\item Developed a full-stack event-coordination platform with REST APIs for real-time GPS-based attendance validation and event tracking.
-\end{itemize}
-
-\project{Garva Diary}{BMC InnovateX \textbar\ Ruby on Rails}
-\begin{itemize}
-\item Engineered backend APIs on a Rails MVC architecture with structured validation workflows and mobile integration.
-\end{itemize}
-
-\section*{Experience}
-
-\project{Full-Stack Engineer, Lamida Inc.}{Full-time \textbar\ 23 Feb 2026 -- Present}
-\begin{itemize}
-\item Build full-stack \textbf{Node.js} applications for scalable \textbf{Web3} products, including a DAO for the \textbf{tUSDT} token.
-\item \textbf{Team Lead, Bitfolio} from September 2026.
-\end{itemize}
-
-\project{Freelance Full-Stack Developer}{Contract, Remote}
-\begin{itemize}
-\item Delivered production full-stack platforms on an \textbf{Express.js + React} stack, handling authentication, REST APIs, and third-party integrations:
-\begin{itemize}
-\item \textbf{Jyotisam:} astrology consultation and booking platform (\href{https://jyotisam.com}{jyotisam.com}).
-\item \textbf{Mahadaan:} donation and charity platform with secure data handling (\href{https://mahadaan.com}{mahadaan.com}).
-\end{itemize}
-\end{itemize}
-
-\project{Mentor, Call for Enthusiasts Program (i-CES)}{}
-\begin{itemize}
-\item Mentored students on building scalable applications with clean backend architecture and development practices.
+\item \textbf{AI Artifact Recognition Platform} {\color{rulegray}\small(PEC Hackathon: \textbf{YOLOv8}, Flask, React)}. Flask backend and React dashboard for real-time object recognition with async inference.
+\item \textbf{Community Connect} {\color{rulegray}\small(OSM Hackathon: Express.js, Flutter)}. Event-coordination platform with GPS-based attendance validation.
+\item \textbf{Garva Diary} {\color{rulegray}\small(BMC InnovateX: Ruby on Rails)}. Rails MVC backend APIs with validation workflows and mobile integration.
 \end{itemize}
 
 \section*{Education}
 
-\textbf{Institute of Engineering, Tribhuvan University} \hfill 2022 to 2026\\
+\textbf{Institute of Engineering, Tribhuvan University} \hfill Graduated 2026\\
 Bachelor of Engineering in Computer Engineering, Pashchimanchal (Western Region) Campus, Pokhara\\
 Aggregate: \textbf{67.98\%}, First Division \ \textbar\ \ English: \textbf{IELTS Academic 7.5} (CEFR C1), no band below 7.0
 
